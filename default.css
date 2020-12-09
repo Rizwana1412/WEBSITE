@@ -1,0 +1,271 @@
+/*
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+*/
+
+
+
+body {
+	margin: 0;
+	padding: 0;
+	background: #666767 url(images/sunrise.jpg) ;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 13px;
+       background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+	color: #000000;
+-webkit-animation: slide 20s linear infinite;
+}
+
+@-webkit-keyframes slide {
+    from { background-position: 0 0; }
+    to { background-position: -400px 0; }
+}  
+
+video{
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+    top: 50%;
+    left: 50%;
+    width: auto;
+    height: auto;
+    -webkit-transform: translateX(-50%) translateY(-50%) translateZ(-1px) scale(2);
+    -moz-transform: translateX(-50%) translateY(-50%) translateZ(-1px) scale(2);
+    transform: translateX(-50%) translateY(-50%) translateZ(-1px) scale(2);
+    z-index: -99
+}
+
+form {
+	margin: 0;
+	padding: 0;
+}
+
+fieldset {
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
+input, textarea {
+	font: bold 1em "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+h1, h2, h3 {
+	margin: 0;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-weight: normal;
+	color: #FFFFFF;
+}
+
+h1 {
+	letter-spacing: -1px;
+	font-size: 2.6em;
+}
+
+h2 {
+	font-size: 1.8em;
+}
+
+h3 {
+	font-size: 1em;
+	font-weight: bold;
+}
+
+p, ul, ol {
+	margin-bottom: 1.6em;
+	line-height: 180%;
+}
+
+p {
+}
+
+blockquote {
+	font-style: italic;
+}
+
+ul {
+}
+
+ol {
+}
+
+a {
+	color: #FFFFFF;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+small {
+}
+
+hr {
+	display: none;
+}
+
+img {
+	border: none;
+}
+
+img.left {
+	float: left;
+	margin: 0 15px 0 0;
+}
+
+img.right {
+	float: left;
+	margin: 0 0 0 15px;
+}
+
+/* Header */
+
+#header {
+	width: 760px;
+	height: 230px;
+	margin: 0 auto;
+	background:#666767 url(images/img02.jpg);
+}
+#header h1 {
+	padding: 110px 0 0 50px;
+}
+
+#header h2 {
+	padding: 0 0 0 50px;
+}
+
+#header a {
+	text-decoration: none;
+}
+
+/* Search */
+
+#search {
+	float: right;
+	width: 200px;
+	padding: 150px 0 0 0;
+}
+
+#search legend {
+	display: none;
+}
+
+#searchfield {
+	width: 140px;
+}
+
+#searchsubmit {
+	display: none;
+}
+
+/* Page */
+
+#page {
+	width: 700px;
+	margin: 0 auto;
+	background: #666767 url(images/sunrise.jpg);
+}
+
+/* Content */
+
+#content {
+	float: left;
+	width: 400px;
+}
+
+.post {
+  padding: 30px 20px 30px 40px;	
+  background:  url(images/wait.jpg) repeat 0 0;
+  box-sizing: border-box;
+  -webkit-animation: slide 20s linear infinite;
+}
+
+@-webkit-keyframes slide {
+    from { background-position: 0 0; }
+    to { background-position: -400px 0; }
+}  
+	
+
+.post .title {
+	margin: 0;
+	padding-left: 30px;
+	background: url(images/img06.gif) no-repeat left center;
+	font-size: 2em;
+        color:#000000;
+}
+
+.post .meta {
+	margin: 0 0 15px 0;
+	padding-top: 5px;
+	background: url(images/img05.gif) repeat-x;                                           
+	line-height: normal;
+}
+
+.post .entry {
+}
+
+/* Sidebar */
+
+#sidebar {
+	float: right;
+	width: 300px;
+padding: 34px 20px 20px 20px;
+background:url(images/glass.jpg) repeat 0 0;
+  box-sizing: border-box;
+
+}
+
+#sidebar ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#sidebar li {
+	margin-bottom: 20px;
+	padding: 34px 20px 20px 20px;
+}
+
+#sidebar li ul {
+	line-height: 2em;
+}
+
+#sidebar li li {
+	margin: 0;
+	padding: 0;
+}
+
+#sidebar h2 {
+	margin-bottom: 14px;
+	letter-spacing: -1px;
+}
+
+#sidebar a {
+	border: none;
+}
+
+/* Footer */
+
+#footer {
+	clear: both;
+	width: 730px;
+	height: 80px;
+	margin: 0 auto;
+	padding-top: 30px;
+	background: #130D0F url(images/img04.jpg);
+	color: #666767;
+}
+
+#footer p {
+	margin: 0;
+	text-align: center;
+	line-height: normal;
+	font-size: .9em;
+}
+
+#footer a {
+	color: #666767;
+}
