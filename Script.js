@@ -1,5 +1,3 @@
-
-// JavaScript source code
 document.querySelector('.img-btn').addEventListener('click', function () {
 	document.querySelector('.cont').classList.toggle('s-signup')
 }
@@ -22,11 +20,7 @@ function ValidateUser() {
 	else if (!pwd_expression1.test(pwd1)) {
 		alert('Upper case, Lower case, Special character and Numeric letter are required in Password filed');
 	}
-	else if (document.getElementById("password").value.length < 6) {
-		alert('Password max length is 12');
-	}
 	else {
-		alert('Thank You for Login');
 		// Redirecting to other page or webste code. 
 		window.location = "homepage.html";
 	}
@@ -74,26 +68,31 @@ function validation() {
 		alert('Thank You for Signing In. You can now go through our website by SIGN IN');
 		// Redirecting to other page or webste code. 
 
-   }
+	}
 }
 
 function check() {
 	var e = document.getElementById("t2").value;
 	var e1 = document.getElementById("email").value;
+	var p = document.getElementById("t4").value;
+	var p1 = document.getElementById("password").value;
 	if (e != e1) {
 		alert('email not registered');
 		ValidateUser.check();
 	}
-	else {
-		
-		window.location = "homepage.html";
+	else if(p != p1) {
+		alert('password incorrect');
+		ValidateUser.check();
+	}
+    else	{
+		return ValidateUser();
     }
 }
 
 function checkname() {
-            var name = document.getElementById("t1").value;
+	var name = document.getElementById("t1").value;
 
-            if (name) {
+	if (name) {
 		$.ajax({
 			type: 'post',
 			url: 'checkdata.php',
@@ -110,17 +109,17 @@ function checkname() {
 				}
 			}
 		});
-}
-            else {
+	}
+	else {
 		$('#name_status').html("");
-	return false;
-}
+		return false;
+	}
 }
 
-        function checkemail() {
-            var email = document.getElementById("t2").value;
+function checkemail() {
+	var email = document.getElementById("t2").value;
 
-            if (email) {
+	if (email) {
 		$.ajax({
 			type: 'post',
 			url: 'checkdata.php',
@@ -137,21 +136,21 @@ function checkname() {
 				}
 			}
 		});
-}
-            else {
+	}
+	else {
 		$('#email_status').html("");
-	return false;
-}
+		return false;
+	}
 }
 
-        function checkall() {
-            var namehtml = document.getElementById("name_status").innerHTML;
+function checkall() {
+	var namehtml = document.getElementById("name_status").innerHTML;
 	var emailhtml = document.getElementById("email_status").innerHTML;
 
-            if ((namehtml && emailhtml) == "OK") {
-                return true;
-}
-            else {
-                return false;
-}
+	if ((namehtml && emailhtml) == "OK") {
+		return true;
+	}
+	else {
+		return false;
+	}
 }
