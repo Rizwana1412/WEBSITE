@@ -22,7 +22,7 @@ function ValidateUser() {
 	}
 	else {
 		// Redirecting to other page or webste code. 
-		window.location = "homepage.html";
+		window.location = "example1.html";
 	}
 }
 
@@ -61,11 +61,11 @@ function validation() {
 	else if (document.getElementById("t5").value.length < 6) {
 		alert('Password minimum length is 6');
 	}
-	else if (document.getElementById("t5").value.length > 12) {
-		alert('Password max length is 12');
+	else if (document.getElementById("t5").value.length > 20) {
+		alert('Password max length is 20');
 	}
 	else {
-		alert('Thank You for Signing In. You can now go through our website by SIGN IN');
+		alert('Thank You for Signing In');
 		// Redirecting to other page or webste code. 
 
 	}
